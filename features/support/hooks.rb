@@ -1,11 +1,12 @@
-require 'watir'
 
-Before do |scenario|
-  DataMagic.load_for_scenario(scenario)
-  @browser = Watir::Browser.new :chrome
-end
+After do |scenario|
+  scenario_name = scenario.name.gsub(/\s+/,'_').tr('/','_')
 
-
-After do
-  @browser.close
+  if scenario.failed?
+    tirar_foto(scenario_name.downcase!, 'falhou')
+  else
+    tirar_foto(scenario_name.downcase!, 'passou')
+  end
+  @LoginSigam = LoginSigam.new
+  @LoginSigam.sair
 end
