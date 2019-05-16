@@ -424,7 +424,52 @@ Cenário: Proponente seleciona a não obrigatoriedade do CAR
     E o campo Sem obrigatoriedade do CAR deve vir Marcado
     E a sub-aba deve conter os botões Finalizar, Atualizar, Retornar e Ajuda
 
+#UserStory: 36533 – Criar aba Propriedade para os Projetos de Prateleira em UC
+#Bruno Spinelli
+#Sprint 2
+#16/05/2019
 
+#COMO Proponente
+#QUERO vincular propriedades de Unidade de Conservação a um Projeto de Prateleira UC
+#PARA que estes possam servir de base no momento de desenhar a área do Projeto de Prateleira UC.
 
+Cenário: Proponente acessa a aba em um projeto de prateleira em UC
+    Dado que tenha acessado o SIGAM
+    E logado com usuario 'gtiAdm' senha 'a'
+    E está no modulo do NASCENTES
+    E clicou em Adicionar projeto
+    E preencheu os campos - Nome do Projeto: "Teste1" - Disponível para contratação de terceiros: Marcado - Tipologia do Projeto:"Projeto de Prateleira em UC" - Área Protegida (UC): "EE - Estação Ecológica Valinhos" - Município: "Valinhos" - UGRHi: "05 - PIRACICABA/CAPIVARI/JUNDIAÍ" - CPF/CNPJ Proponente: "792.832.018-50"
+    E clicou em Cadastrar projeto
+    E preencheu os campos - Nome: "Teste2" - Município: "SP" "São Paulo" - Telefone: DDD:"11" Número: "1234-5678" DDD Cel: "11" Cel: "98765-4321" - Atividade/Profissão: "Teste3" - Cargo/Função: "Responsável Técnico" - E-mail: "Teste4@Teste5.com"
+    E clicou em Cadastrar pessoa
+    E preencheu o campo - Confirmação do E-mail: "Teste4@Teste5.com"
+    E clicou em Cadastrar pessoa
+    E clicou em Cadastrar projeto
+    Quando clicar em Propriedades
+    Então o sistema deve carregar a aba Propriedades
+    E a aba deve conter um grid das propriedades adicionadas no banco
+    E o grid deve conter os campos: Propriedades, Área Protegida (UC), Município, Área total da propriedade (ha), Área total de Restauração (ha)
+    E o grid deve conter uma linha com os dados: "EE - Estação Ecológica Valinhos", "VALINHOS", "992,23", "775,47"
 
-
+Cenário: Proponente acessa as propriedades de uma propriedade em uma UC
+    Dado que tenha acessado o SIGAM
+    E logado com usuario 'gtiAdm' senha 'a'
+    E está no modulo do NASCENTES
+    E clicou em Adicionar projeto
+    E preencheu os campos - Nome do Projeto: "Teste1" - Disponível para contratação de terceiros: Marcado - Tipologia do Projeto:"Projeto de Prateleira em UC" - Área Protegida (UC): "EE - Estação Ecológica Valinhos" - Município: "Valinhos" - UGRHi: "05 - PIRACICABA/CAPIVARI/JUNDIAÍ" - CPF/CNPJ Proponente: "792.832.018-50"
+    E clicou em Cadastrar projeto
+    E preencheu os campos - Nome: "Teste2" - Município: "SP" "São Paulo" - Telefone: DDD:"11" Número: "1234-5678" DDD Cel: "11" Cel: "98765-4321" - Atividade/Profissão: "Teste3" - Cargo/Função: "Responsável Técnico" - E-mail: "Teste4@Teste5.com"
+    E clicou em Cadastrar pessoa
+    E preencheu o campo - Confirmação do E-mail: "Teste4@Teste5.com"
+    E clicou em Cadastrar pessoa
+    E clicou em Cadastrar projeto
+    E clicou em Propriedades
+    Quando clicar em Propriedades na linha com os dados: "EE - Estação Ecológica Valinhos", "VALINHOS", "992,23", "775,47"
+    Então o sistema deve carregar a tela Mapa
+    E a tela deve conter o logo do estado de São Paulo a direita
+    E a tela deve conter o título "Área do Projeto"
+    E a tela deve conter o botão: Sair do Mapa
+    E a tela deve conter um mapa
+    E o mapa deve conter os botões: Cálculo de Área e Medir Distância
+    E o mapa deve conter uma legenda
+    E a legenda deve conter as informações de: Municío UC, Área total da UC, Zona de Amortecimento, Acessos, Área disponível para restauração e Desenho da área do Projeto

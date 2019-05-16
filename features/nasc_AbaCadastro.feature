@@ -10,6 +10,15 @@
 #QUERO incluir dados de um Projeto de Prateleira
 #PARA que ao final seja possível submeter este projeto a aprovação da comissão da Secretaria do Meio Ambiente.
 
+#UserStory: 45224-ProgramaNascentes-Criar cadastro de Projeto de Prateleira em UC
+#Bruno Spinelli
+#Sprint 2
+#16/05/2019
+
+#COMO Proponente
+#QUERO que seja possível criar um Projeto de Prateleira utilizando Áreas Protegidas (UC)
+#PARA que seja possível incluir este projeto na Prateleira de Projetos do Programa Nascentes.
+
 Funcionalidade: Cadastrar, alterar e excluir os dados básicos de um projeto
 
 Cenário: Usuário acessa a aba durante a criação de um projeto
