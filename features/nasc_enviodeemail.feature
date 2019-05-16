@@ -22,12 +22,12 @@ Cenário: Conferir envio de Email
     E inserir a senha 'a'
     E clicar em Acesso
     E clciar em Programa Nascentes
-    E clicar em editar em um projeto com situaçãop Cadastrado
+    E clicar em editar em um projeto com situação Cadastrado que tenhas mais de uma pessoa na equipe
     E clicar na aba Mensagem
     E clicar em Adicionar
     E inserir nos campos Modelo de Mensagem '' - Assunto da Mensagem '' 
     E clicar em Atualizar
     E selecionar aba Envio para Destinatários
     Quando clicar em Enviar para todos
-    Então o sistema envia a mensagem para o email o destinatário em default
+    Então o sistema envia a mensagem para o email para os destinatário em default
 

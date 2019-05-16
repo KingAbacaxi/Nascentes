@@ -143,7 +143,6 @@ Dado que tenha acessado o SIGAM
 E logado com usuario 'gtiAdm' senha 'a'
 E está no modulo do NASCENTES
 E posicionado o mouse sobre o menu Dicionários
-
 E clicado em Função
 E clicado em adicionar função
 E preenchido os campos - Código Função: "Teste1" - Nome Função: "Teste2" - Ativo: marcado - Descrição Função: "Teste3"
