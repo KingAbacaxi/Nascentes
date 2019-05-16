@@ -69,7 +69,7 @@ Cenário: Conferir apresentação da aba 'Compromissários Vinculados' quando ho
 
 @CriarAbaCompromissáriosVinculados
 
-Funcionalidade: Criar Sub-Aba Cadastro Compromissário
+#Funcionalidade: Criar Sub-Aba Cadastro Compromissário
 
 #UserStory - 46792 - Criar Sub-aba Cadastro Compromissário
 

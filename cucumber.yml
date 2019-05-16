@@ -1,1 +1,8 @@
-default: --no-source --color --format pretty
+
+default:  --profile pretty --p html --p chrome
+pretty: --no-source --color --format pretty
+progress: --format progress
+
+html: --format html --out=reports/relatorio.html
+chrome_headless: BROWSER=chrome_headless
+chrome: BROWSER=chrome
