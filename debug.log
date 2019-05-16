@@ -3,5 +3,5 @@
 [0516/141428.721:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
 [0516/141428.721:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
 [0516/141428.722:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
-[0516/141428.722:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0516/141428.722:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso nï¿½o lhe foi concedido. (0xc0000022)
 [0516/141428.723:ERROR:exception_snapshot_win.cc(98)] thread ID 17372 not found in process
