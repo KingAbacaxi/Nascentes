@@ -21,10 +21,10 @@ Cenário: Conferir apresentação da aba Finalizar
     E inserir 'gtiadm' no campo Usuario
     E inserir a senha 'a'
     E clicar em Acesso
-    E clciar em Programa Nascentes
+    E clicar em Programa Nascentes
     E clicar em Editar um projeto
     Quando clicar na aba Finalizar
-    Então o sistema apresenta a tela de finalizar 
+    Então o sistema apresenta a tela de finalizar com o resumo do projeto - Declarações
     E o botão Verificar Cadastro
     E o botão Submeter cadastro
 
