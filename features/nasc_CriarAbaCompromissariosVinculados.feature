@@ -61,6 +61,7 @@ Cenário: Conferir apresentação da aba 'Compromissários Vinculados' quando ho
     Então o sistema passa a apresentar a aba Compromissário Vinculado
     E o botão Adicionar
 
+
 # Algumas validações dependem das users abaixo: 
 #46792-Criar Sub-aba Cadastro Compromissário;
 #46794-Criar Sub-aba Equipe Compromissário;
@@ -421,3 +422,4 @@ Cenário: Conferir exclusão pela edição
     E selecionar ok
     Então o sistema exclui o registro do GRID
     E apresenta a mensagem Não existem compromissários vinculados!
+

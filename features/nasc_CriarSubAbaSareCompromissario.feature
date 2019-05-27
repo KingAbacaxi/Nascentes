@@ -266,7 +266,7 @@ Cenário: Conferir campos da aba Número SARE quando "Motivação" diferente de 
     E o botão Retornar
     E o botão Excluir
     E o botão Ajuda
-# parei aqui
+    
 Cenário: Conferir campos da aba Número SARE quando "Motivação" igual à "Exigência CFB - Conversão de Multa"
     Dado que acesse o site do SIGAM
     E inserir 'gtiadm' no campo Usuario
